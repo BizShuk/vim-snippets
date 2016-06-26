@@ -136,7 +136,7 @@ snippet fun
 	}
 	${0}
 # function on receiver
-snippet fum
+snippet mfun
 	func (${1:receiver} ${2:type}) ${3:funcName}(${4}) ${5:error} {
 		${6}
 	}
@@ -169,6 +169,10 @@ snippet pa
 snippet pn
 	panic("${0:msg}")
 # print
+snippet pt
+	fmt.Print(${1})
+snippet pl
+	fmt.Println(${1})
 snippet pr
 	fmt.Printf("%${1:s}\n", ${2:var})
 # range
